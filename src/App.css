@@ -1,0 +1,83 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+.hover-underline-animation::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #F5A524;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+
+.hover-underline-animation-footer {
+display: inline-block;
+position: relative;
+}
+
+.hover-underline-animation-footer::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 1px;
+bottom: 0;
+left: 0;
+background-color: #FFFFFF;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-footer:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+/* ESTILOS DEL CAROUSEL */
+
+.left, .right {
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #fa2020;
+  border: 2px solid blue;
+}
