@@ -7,8 +7,6 @@ const Carrousel = () => {
     <>
       <Flicking
         preventClickOnDrag={true}
-        moveType={"snap"}
-        inputType={["touch", "mouse"]}
         panelsPerView={1}
         align={"prev"}
         circular={true}
