@@ -8,15 +8,17 @@ import {
   Link,
   Grid,
   GridItem,
+  Image,
 } from "@chakra-ui/react";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { motion } from "framer-motion";
+import logoFooter from "../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
     <VStack
       alignItems={"stretch"}
-      backgroundColor={"blackAlpha.900"}
+      backgroundColor={"brand.background"}
       px={{ base: 4, lg: 12 }}
       pt={16}
       pb={4}
@@ -31,6 +33,9 @@ const Footer = () => {
         margin={"0 auto"}
         w={"90%"}
       >
+        <GridItem>
+          <Image margin={"0 auto"} src={logoFooter} />
+        </GridItem>
         <GridItem>
           <UnorderedList
             gap={2}
@@ -80,6 +85,7 @@ const Footer = () => {
             >
               <ListItem>
                 <Link
+                  color={"brand.acentColor"}
                   _hover={{ textDecoration: "none" }}
                   className="hover-underline-animation-footer"
                   isExternal
@@ -92,6 +98,7 @@ const Footer = () => {
               </ListItem>
               <ListItem>
                 <Link
+                  color={"brand.acentColor"}
                   _hover={{ textDecoration: "none" }}
                   className="hover-underline-animation-footer"
                   isExternal
@@ -109,7 +116,7 @@ const Footer = () => {
                 href="https://www.instagram.com/swwwing.ok/"
                 isExternal
               >
-                <Icon as={BsInstagram} />
+                <Icon color={"brand.secondaryColor"} as={BsInstagram} />
               </Link>
               <Link
                 as={motion.a}
@@ -118,20 +125,20 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/swwwing/"
                 isExternal
               >
-                <Icon as={BsLinkedin} />
+                <Icon color={"brand.secondaryColor"} as={BsLinkedin} />
               </Link>
             </HStack>
           </VStack>
         </GridItem>
       </Grid>
-      <HStack pt={4} justifyContent={"center"} color={"whiteAlpha.900"}>
+      <HStack pt={4} justifyContent={"center"} color={"brand.acentColor"}>
         <Link
           href="https://www.swwwing.com.ar"
           isExternal
           _hover={{ textDecoration: "none" }}
           className="hover-underline-animation-footer"
         >
-          <Text fontSize={".8rem"}>
+          <Text textAlign={"center"} fontSize={".8rem"}>
             © Swwwing Agency 2023 - All rights reserved
           </Text>
         </Link>

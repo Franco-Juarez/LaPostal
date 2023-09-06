@@ -49,35 +49,7 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 
-/* ESTILOS DEL CAROUSEL */
 
-.left, .right {
-  color: #fff;
-  padding: 10px 8px 8px 13px;
-  margin: 0 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 10px;
-  height: 25px;
-  width: 25px;
-}
-.left {
-  left: 0;
-}
-.right {
-  right: 0;
-}
-
-.dot {
-  background-color: #333;
-  width: 15px;
-  height: 15px;
-  margin: 10px;
-  border-radius: 50%;
-}
-.active {
-  background-color: #fa2020;
-  border: 2px solid blue;
+.dataInput:where(button, input, optgroup, select, textarea)  {
+  color: #CCCCCC;
 }

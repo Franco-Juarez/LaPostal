@@ -7,10 +7,9 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
-import logo from "../assets/react.svg";
-import PopUpBtn from "./PopUpBtn";
 import { keyframes } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import pajarosMenu from "../assets/pajaritos_menu.png";
 
 const animationKeyframes = keyframes`
   0% { opacity: 0;}
@@ -27,22 +26,19 @@ const NavBar = () => {
       as={motion.div}
       animation={animation}
       px={{ base: 0, lg: 12 }}
-      backgroundColor={"#FFFFFF"}
-      position={"sticky"}
+      backgroundColor={"transparent"}
+      position={"fixed"}
       top={0}
+      right={0}
       zIndex={10}
     >
       <HStack
         zIndex={10}
-        width={"90%"}
+        width={{ base: "100%", lg: "90%" }}
         margin={"0 auto"}
-        justifyContent={"space-between"}
+        justifyContent={{ base: "flex-end", lg: "center" }}
       >
-        <a href="/">
-          <Image w={100} src={logo} />
-        </a>
         <HStack
-          gap={4}
           flexDirection={{
             base: isToggled ? "column-reverse" : "row",
             lg: "row",
@@ -53,7 +49,6 @@ const NavBar = () => {
           }}
           alignItems={{ base: isToggled ? "flex-end" : "center", lg: "center" }}
           p={4}
-          pr={0}
           position={{
             base: isToggled ? "absolute" : "relative",
             lg: "relative",
@@ -64,7 +59,9 @@ const NavBar = () => {
           w={{ base: isToggled ? "100vw" : "auto", lg: "auto" }}
           h={{ base: isToggled ? "100vh" : "auto", lg: "auto" }}
           textAlign={{ base: "right", lg: "center" }}
-          backgroundColor={"#FFFFFF"}
+          backgroundColor={{
+            base: isToggled ? "brand.acentColor" : "transparent",
+          }}
           boxShadow={{
             base: isToggled ? "0 0 0 100vmax rgba(0, 0, 0, .7)" : "none",
             lg: "none",
@@ -72,44 +69,88 @@ const NavBar = () => {
         >
           <UnorderedList
             w={"100%"}
+            h={"100vh"}
             m={0}
-            gap={8}
+            gap={12}
             display={{ base: isToggled ? "flex" : "none", lg: "flex" }}
             flexDirection={{ base: "column", lg: "row" }}
             alignItems={"center"}
+            justifyContent={"center"}
             fontSize={20}
           >
+            <ListItem listStyleType={"none"}>
+              <Image src={pajarosMenu} />
+            </ListItem>
             <ListItem
+              fontSize={"24px"}
+              fontStyle={"italic"}
+              fontFamily={"secondaryHeading"}
+              color={"brand.background"}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#servicios">Servicios</a>
+              <a href="#servicios">Nosotros</a>
             </ListItem>
             <ListItem
+              fontSize={"24px"}
+              fontStyle={"italic"}
+              fontFamily={"secondaryHeading"}
+              color={"brand.background"}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#oficinas">Oficinas</a>
+              <a href="#oficinas">Menú</a>
             </ListItem>
             <ListItem
+              fontSize={"24px"}
+              fontStyle={"italic"}
+              fontFamily={"secondaryHeading"}
+              color={"brand.background"}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#blog">Blog</a>
+              <a href="#blog">Eventos</a>
             </ListItem>
-            <PopUpBtn btnName="Contacto" />
+            <ListItem
+              fontSize={"24px"}
+              fontStyle={"italic"}
+              fontFamily={"secondaryHeading"}
+              color={"brand.background"}
+              className="hover-underline-animation"
+              listStyleType={"none"}
+            >
+              <a href="#blog">Galería</a>
+            </ListItem>
+            <ListItem
+              fontSize={"24px"}
+              fontStyle={"italic"}
+              fontFamily={"secondaryHeading"}
+              color={"brand.background"}
+              className="hover-underline-animation"
+              listStyleType={"none"}
+            >
+              <a href="#blog">Contacto</a>
+            </ListItem>
           </UnorderedList>
           <Button
             display={{ base: "flex", lg: "none" }}
             flexDirection={"column"}
-            mr={{ base: isToggled ? 4 : "auto", lg: "auto" }}
+            mr={{ base: isToggled ? 0 : "auto", lg: "auto" }}
             gap={2}
             p={4}
+            _active={{ backgroundColor: "transparent" }}
+            _hover={{ backgroundColor: "transparent" }}
             backgroundColor={"transparent"}
             onClick={() => setIsToggled(!isToggled)}
           >
-            <CloseIcon display={isToggled ? "block" : "none"} />
-            <HamburgerIcon display={isToggled ? "none" : "block"} />
+            <CloseIcon
+              color={"brand.background"}
+              display={isToggled ? "block" : "none"}
+            />
+            <HamburgerIcon
+              color={"brand.acentColor"}
+              display={isToggled ? "none" : "block"}
+            />
           </Button>
         </HStack>
       </HStack>

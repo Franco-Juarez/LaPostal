@@ -1,10 +1,30 @@
+import CarrouselImage1 from "../assets/carouselImages/foto1-galeria.png";
+import CarrouselImage2 from "../assets/carouselImages/foto2-galeria.png";
+import CarrouselImage3 from "../assets/carouselImages/foto3-galeria.png";
+import CarrouselImage4 from "../assets/carouselImages/foto4-galeria.png";
+import CarrouselImage5 from "../assets/carouselImages/foto5-galeria.png";
+import CarrouselImage6 from "../assets/carouselImages/foto6-galeria.png";
+
 const images = [
-  "https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600",
-  "https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  {
+    id:1,
+    image: CarrouselImage1
+  },
+  {
+    id:2,
+    image: CarrouselImage2},
+  {
+    id:3,
+    image: CarrouselImage3},
+  {
+    id:4,
+    image: CarrouselImage4},
+  {
+    id:5,
+    image: CarrouselImage5},
+  {
+    id:6,
+    image:CarrouselImage6},
 ];
 
 export default images;

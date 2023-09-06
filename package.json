@@ -12,8 +12,12 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
     "@chakra-ui/react": "^2.8.0",
+    "@egjs/react-flicking": "^4.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/cinzel": "^5.0.8",
+    "@fontsource-variable/lora": "^5.0.9",
+    "@fontsource-variable/montserrat": "^5.0.9",
     "framer-motion": "^10.16.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
