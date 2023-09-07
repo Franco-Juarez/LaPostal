@@ -15,7 +15,7 @@ transform: scaleX(0);
 height: 2px;
 bottom: 0;
 left: 0;
-background-color: #F5A524;
+background-color: #8BA892;
 transform-origin: bottom right;
 transition: transform 0.25s ease-out;
 }
@@ -53,3 +53,4 @@ transform-origin: bottom left;
 .dataInput:where(button, input, optgroup, select, textarea)  {
   color: #CCCCCC;
 }
+

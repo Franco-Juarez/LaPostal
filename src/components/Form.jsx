@@ -11,7 +11,7 @@ import {
 
 const Form = () => {
   return (
-    <FormControl gap={10} py={10} width={"80%"} isRequired>
+    <FormControl gap={10} py={10} width={{ base: "80%", lg: "50%" }} isRequired>
       <FormLabel color={"brand.background"}>Nombre</FormLabel>
       <Input
         backgroundColor={"#FFFFFF"}
@@ -61,6 +61,7 @@ const Form = () => {
         <Button
           py={4}
           px={8}
+          border={"2px solid #CF9A84"}
           lineHeight={"90px"}
           fontSize={"20px"}
           fontStyle={"italic"}
@@ -71,6 +72,11 @@ const Form = () => {
           mt={4}
           width={"200px"}
           type="submit"
+          _hover={{
+            backgroundColor: "brand.background",
+            borderColor: "brand.mainColor",
+            color: "brand.mainColor",
+          }}
         >
           Enviar Consulta
         </Button>

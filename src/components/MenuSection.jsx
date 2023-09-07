@@ -8,18 +8,18 @@ export const MenuSection = () => {
         gap={5}
         justifyContent={"center"}
         alignItems={"center"}
-        backgroundPosition={"bottom"}
+        backgroundPosition={{ base: "bottom", lg: "center" }}
         backgroundRepeat={"no-repeat"}
         backgroundSize={"cover"}
         backgroundImage={bgMenu}
         w={"100%"}
         h={"50vh"}
       >
-        <Image src={pajaros} />
+        <Image w={{ base: "80px", lg: "100px" }} src={pajaros} />
         <Heading
           fontFamily={"secondaryHeading"}
           textAlign={"center"}
-          fontSize={"24px"}
+          fontSize={{ base: "24px", lg: "40px" }}
           fontStyle={"italic"}
           fontWeight={400}
           color={"brand.background"}
@@ -27,8 +27,13 @@ export const MenuSection = () => {
           Nuestro menú
         </Heading>
       </VStack>
-      <VStack backgroundColor={"brand.background"} p={4} pb={10} w={"100%"}>
-        <Text w={"100%"} textAlign={"center"} color={"blackAlpha.900"}>
+      <VStack backgroundColor={"brand.background"} gap={8} py={16} w={"100%"}>
+        <Text
+          fontSize={{ base: "16px", lg: "20px" }}
+          w={{ base: "100%", lg: "70%" }}
+          textAlign={"center"}
+          color={"brand.acentColor"}
+        >
           Nuestro restaurante está abierto durante todo el año. Servimos brunchs
           y meriendas, sandwiches, tostones, ensaladas y más, incorporando
           frutos de mar, vegetales de estación e ingredientes de producción
@@ -44,6 +49,12 @@ export const MenuSection = () => {
           color={"brand.background"}
           borderRadius={0}
           backgroundColor={"brand.mainColor"}
+          border={"2px solid #CF9A84"}
+          _hover={{
+            backgroundColor: "brand.background",
+            borderColor: "brand.mainColor",
+            color: "brand.mainColor",
+          }}
         >
           Menú verano 2023
         </Button>

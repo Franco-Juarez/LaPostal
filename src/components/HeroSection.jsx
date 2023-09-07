@@ -26,23 +26,26 @@ const HeroSection = () => {
         as={motion.div}
         animation={animation}
         margin={"0 auto"}
-        gap={{ base: 2, lg: 4 }}
-        alignItems={"flex-start"}
+        gap={{ base: 2, lg: 0 }}
+        alignItems={{ base: "flex-start", lg: "center" }}
         px={{ base: 8, lg: 12 }}
       >
         <Heading
-          w={{ base: "98%", lg: "100%" }}
+          w={{ base: "98%", lg: "80%" }}
           textAlign={"left"}
+          lineHeight={{ base: "70px", lg: "150px" }}
           fontWeight={400}
-          fontSize={{ base: "70px", md: "3rem" }}
+          fontSize={{ base: "70px", md: "160px" }}
           color={"brand.secondaryColor"}
         >
           La Postal
         </Heading>
         <Text
+          w={"75%"}
           textAlign={"left"}
+          fontFamily={"secondaryHeading"}
           color={"brand.secondaryColor"}
-          fontSize={{ base: "1.2rem", sm: "1.5rem" }}
+          fontSize={{ base: "1.2rem", sm: "42px" }}
         >
           Parador de playa | Est. 1993
         </Text>

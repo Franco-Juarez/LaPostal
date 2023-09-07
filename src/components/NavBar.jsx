@@ -20,19 +20,33 @@ const animation = `${animationKeyframes} .5s ease-in-out`;
 
 const NavBar = () => {
   const [isToggled, setIsToggled] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 1) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
 
   return (
     <HStack
+      width={"100%"}
       as={motion.div}
       animation={animation}
       px={{ base: 0, lg: 12 }}
-      backgroundColor={"transparent"}
+      backgroundColor={scroll ? "brand.background" : "transparent"}
       position={"fixed"}
       top={0}
       right={0}
       zIndex={10}
+      py={4}
     >
       <HStack
+        m={"0 auto"}
         zIndex={10}
         width={{ base: "100%", lg: "90%" }}
         margin={"0 auto"}
@@ -69,7 +83,7 @@ const NavBar = () => {
         >
           <UnorderedList
             w={"100%"}
-            h={"100vh"}
+            h={{ base: "100vh", lg: "auto" }}
             m={0}
             gap={12}
             display={{ base: isToggled ? "flex" : "none", lg: "flex" }}
@@ -78,14 +92,17 @@ const NavBar = () => {
             justifyContent={"center"}
             fontSize={20}
           >
-            <ListItem listStyleType={"none"}>
+            <ListItem
+              display={{ base: "block", lg: "none" }}
+              listStyleType={"none"}
+            >
               <Image src={pajarosMenu} />
             </ListItem>
             <ListItem
               fontSize={"24px"}
               fontStyle={"italic"}
               fontFamily={"secondaryHeading"}
-              color={"brand.background"}
+              color={{ base: "brand.background", lg: "brand.acentColor" }}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
@@ -95,7 +112,7 @@ const NavBar = () => {
               fontSize={"24px"}
               fontStyle={"italic"}
               fontFamily={"secondaryHeading"}
-              color={"brand.background"}
+              color={{ base: "brand.background", lg: "brand.acentColor" }}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
@@ -105,7 +122,7 @@ const NavBar = () => {
               fontSize={"24px"}
               fontStyle={"italic"}
               fontFamily={"secondaryHeading"}
-              color={"brand.background"}
+              color={{ base: "brand.background", lg: "brand.acentColor" }}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
@@ -115,7 +132,7 @@ const NavBar = () => {
               fontSize={"24px"}
               fontStyle={"italic"}
               fontFamily={"secondaryHeading"}
-              color={"brand.background"}
+              color={{ base: "brand.background", lg: "brand.acentColor" }}
               className="hover-underline-animation"
               listStyleType={"none"}
             >
@@ -125,7 +142,7 @@ const NavBar = () => {
               fontSize={"24px"}
               fontStyle={"italic"}
               fontFamily={"secondaryHeading"}
-              color={"brand.background"}
+              color={{ base: "brand.background", lg: "brand.acentColor" }}
               className="hover-underline-animation"
               listStyleType={"none"}
             >

@@ -20,11 +20,11 @@ const Footer = () => {
       alignItems={"stretch"}
       backgroundColor={"brand.background"}
       px={{ base: 4, lg: 12 }}
-      pt={16}
-      pb={4}
+      gap={8}
+      py={12}
     >
       <Grid
-        templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+        templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
         gap={2}
         alignItems={{ base: "center", md: "flex-start" }}
         justifyContent={"space-between"}
@@ -34,7 +34,9 @@ const Footer = () => {
         w={"90%"}
       >
         <GridItem>
-          <Image margin={"0 auto"} src={logoFooter} />
+          <a href="/">
+            <Image margin={"0 auto"} src={logoFooter} />
+          </a>
         </GridItem>
         <GridItem>
           <UnorderedList
