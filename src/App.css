@@ -54,3 +54,23 @@ transform-origin: bottom left;
   color: #CCCCCC;
 }
 
+/* SLIDER STYLES */
+
+
+.slider-control-centerright, .slider-control-centerleft {
+  display: none;
+}
+.slider-control-bottomcenter ul {
+  display: flex;
+  gap: 20px;
+}
+
+.slider-control-bottomcenter .active button svg, .slider-control-bottomcenter button svg {
+  fill: #FFFFFF;
+}
+
+.slider-control-bottomcenter ul svg {
+  width: 15px;
+  height: 15px;
+}
+

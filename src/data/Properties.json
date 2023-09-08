@@ -5,7 +5,7 @@
     "descripcion": "Oficina moderna en Santiago de Cali, Colombia.",
     "precio": 4600,
     "ubicacion": "Santiago de Cali, Colombia",
-    "image": "officesImgs/office1.webp"
+    "image": "images/carouselImages/foto1-galeria.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "descripcion": "Moderna oficina en el centro de Bogotá, Colombia.",
     "precio": 4500,
     "ubicacion": "Bogotá, Colombia",
-    "image": "officesImgs/office2.webp"
+    "image": "images/carouselImages/foto2-galeria.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "descripcion": "Oficina ejecutiva en el distrito financiero de São Paulo, Brasil.",
     "precio": 6000,
     "ubicacion": "São Paulo, Brasil",
-    "image": "officesImgs/office3.webp"
+    "image": "images/carouselImages/foto3-galeria.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "descripcion": "Amplia oficina en el corazón de Ciudad de México.",
     "precio": 4800,
     "ubicacion": "Ciudad de México, México",
-    "image": "officesImgs/office4.webp"
+    "image": "images/carouselImages/foto4-galeria.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "descripcion": "Oficina elegante en el centro de Buenos Aires, Argentina.",
     "precio": 5500,
     "ubicacion": "Buenos Aires, Argentina",
-    "image": "officesImgs/office5.webp"
+    "image": "images/carouselImages/foto5-galeria.png"
   },
   {
     "id": 6,
@@ -45,55 +45,8 @@
     "descripcion": "Espaciosa oficina en el distrito financiero de Santiago, Chile.",
     "precio": 5200,
     "ubicacion": "Santiago, Chile",
-    "image": "officesImgs/office6.webp"
-  },
-  {
-    "id": 7,
-    "nombre": "Oficina en Lima",
-    "descripcion": "Oficina moderna en el centro de Lima, Perú.",
-    "precio": 4300,
-    "ubicacion": "Lima, Perú",
-    "image": "officesImgs/office7.webp"
-  },
-  {
-    "id": 8,
-    "nombre": "Oficina en Río de Janeiro",
-    "descripcion": "Oficina ejecutiva completamente equipada en Río de Janeiro, Brasil.",
-    "precio": 5800,
-    "ubicacion": "Río de Janeiro, Brasil",
-    "image": "officesImgs/office8.webp"
-  },
-  {
-    "id": 9,
-    "nombre": "Oficina en Montevideo",
-    "descripcion": "Cómoda oficina en el centro de Montevideo, Uruguay.",
-    "precio": 4600,
-    "ubicacion": "Montevideo, Uruguay",
-    "image": "officesImgs/office9.webp"
-  },
-  {
-    "id": 10,
-    "nombre": "Oficina en Quito",
-    "descripcion": "Oficina bien ubicada en Quito, Ecuador.",
-    "precio": 4100,
-    "ubicacion": "Quito, Ecuador",
-    "image": "officesImgs/office10.webp"
-  },
-  {
-    "id": 11,
-    "nombre": "Oficina en Caracas",
-    "descripcion": "Amplia oficina en Caracas, Venezuela.",
-    "precio": 4900,
-    "ubicacion": "Caracas, Venezuela",
-    "image": "officesImgs/office11.webp"
-  },
-  {
-    "id": 12,
-    "nombre": "Oficina en San José",
-    "descripcion": "Oficina en el centro de San José, Costa Rica.",
-    "precio": 4200,
-    "ubicacion": "San José, Costa Rica",
-    "image": "officesImgs/office12.webp"
+    "image": "images/carouselImages/foto6-galeria.png"
   }
+  
 ]
   

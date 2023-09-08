@@ -1,11 +1,11 @@
 import "./App.css";
 import Banner from "./components/Banner";
-import Carrousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import FormSection from "./components/FormSection";
 import HeroSection from "./components/HeroSection";
 import { MenuSection } from "./components/MenuSection";
 import NavBar from "./components/NavBar";
+import SliderImages from "./components/Slider";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       />
       <MenuSection />
       <FormSection />
-      <Carrousel />
+      <SliderImages />
       <Footer />
     </div>
   );
