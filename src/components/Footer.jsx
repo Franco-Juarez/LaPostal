@@ -34,7 +34,7 @@ const Footer = () => {
         margin={"0 auto"}
         w={"90%"}
       >
-        <GridItem w={"220px"}>
+        <GridItem m={{ base: "0 auto", lg: 0 }} w={"220px"}>
           <a href="/">
             <Image src={logoFooter} />
           </a>

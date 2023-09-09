@@ -27,7 +27,7 @@ const HeroSection = () => {
         animation={animation}
         margin={"0 auto"}
         gap={{ base: 2, lg: 0 }}
-        alignItems={{ base: "flex-start", lg: "center" }}
+        alignItems={"center"}
         px={{ base: 8, lg: 12 }}
       >
         <Heading
@@ -41,7 +41,7 @@ const HeroSection = () => {
           La Postal
         </Heading>
         <Text
-          w={"75%"}
+          w={{ base: "100%", xl: "75%" }}
           textAlign={"left"}
           fontFamily={"secondaryHeading"}
           fontStyle={"italic"}
