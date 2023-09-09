@@ -25,7 +25,7 @@ const FormSection = () => {
         w={"100%"}
         src={formImageDesktop}
       />
-      <VStack p={4} pt={{ base: 0, xl: 16 }}>
+      <VStack pt={{ base: 4, xl: 16 }}>
         <Heading
           fontSize={{ base: "24px", lg: "40px" }}
           fontStyle={"italic"}
