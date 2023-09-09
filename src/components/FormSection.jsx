@@ -5,7 +5,12 @@ import formImageDesktop from "../assets/formImageDesktop.png";
 
 const FormSection = () => {
   return (
-    <VStack id="eventos" backgroundColor={"brand.secondaryColor"}>
+    <VStack
+      py={16}
+      px={20}
+      id="eventos"
+      backgroundColor={"brand.secondaryColor"}
+    >
       <Image
         maxW={"400px"}
         p={4}

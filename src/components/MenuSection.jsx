@@ -27,7 +27,7 @@ export const MenuSection = () => {
           Nuestro menú
         </Heading>
       </VStack>
-      <VStack backgroundColor={"brand.background"} gap={8} p={4} w={"100%"}>
+      <VStack backgroundColor={"brand.background"} gap={8} py={16} w={"100%"}>
         <Text
           fontSize={{ base: "16px", lg: "20px" }}
           w={{ base: "100%", md: "80%" }}

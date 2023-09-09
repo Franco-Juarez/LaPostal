@@ -44,7 +44,8 @@ const HeroSection = () => {
           w={"75%"}
           textAlign={"left"}
           fontFamily={"secondaryHeading"}
-          color={"brand.secondaryColor"}
+          fontStyle={"italic"}
+          color={"brand.acentColor"}
           fontSize={{ base: "1.2rem", sm: "42px" }}
         >
           Parador de playa | Est. 1993

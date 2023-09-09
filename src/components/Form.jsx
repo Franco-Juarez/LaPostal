@@ -11,7 +11,14 @@ import {
 
 const Form = () => {
   return (
-    <FormControl gap={10} py={5} width={{ base: "100%", lg: "50%" }} isRequired>
+    <FormControl
+      display={"flex"}
+      flexDirection={"column"}
+      gap={2}
+      py={5}
+      width={{ base: "100%", lg: "50%" }}
+      isRequired
+    >
       <FormLabel color={"brand.background"}>Nombre</FormLabel>
       <Input
         backgroundColor={"#FFFFFF"}
@@ -29,7 +36,9 @@ const Form = () => {
       />
       <HStack>
         <Box w={"50%"}>
-          <FormLabel color={"brand.background"}>Fecha Probable</FormLabel>
+          <FormLabel pt={2} color={"brand.background"}>
+            Fecha Probable
+          </FormLabel>
           <Input
             backgroundColor={"#FFFFFF"}
             borderRadius={"none"}
@@ -40,7 +49,9 @@ const Form = () => {
           />
         </Box>
         <Box w={"50%"}>
-          <FormLabel color={"brand.background"}>Nro de invitados</FormLabel>
+          <FormLabel pt={2} color={"brand.background"}>
+            Nro de invitados
+          </FormLabel>
           <Input
             backgroundColor={"#FFFFFF"}
             borderRadius={"none"}
@@ -50,7 +61,9 @@ const Form = () => {
           />
         </Box>
       </HStack>
-      <FormLabel color={"brand.background"}>Detalles del evento</FormLabel>
+      <FormLabel pt={2} color={"brand.background"}>
+        Detalles del evento
+      </FormLabel>
       <Textarea
         backgroundColor={"#FFFFFF"}
         borderRadius={"none"}

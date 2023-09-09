@@ -25,7 +25,7 @@ const Footer = () => {
       py={12}
     >
       <Grid
-        templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+        templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
         gap={2}
         alignItems={{ base: "center", md: "flex-start" }}
         justifyContent={"space-between"}
@@ -34,46 +34,10 @@ const Footer = () => {
         margin={"0 auto"}
         w={"90%"}
       >
-        <GridItem>
+        <GridItem w={"220px"}>
           <a href="/">
-            <Image margin={"0 auto"} src={logoFooter} />
+            <Image src={logoFooter} />
           </a>
-        </GridItem>
-        <GridItem>
-          <UnorderedList
-            gap={2}
-            textAlign={"left"}
-            display={{ base: "none", lg: "flex" }}
-            flexDirection={"column"}
-            justifyContent={"space-between"}
-            m={0}
-            listStyleType={"none"}
-          >
-            <ListItem>
-              <Link
-                _hover={{ color: "mainColor", fontWeight: 700 }}
-                href="/#servicios"
-              >
-                Servicios
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                _hover={{ color: "mainColor", fontWeight: 700 }}
-                href="/#oficinas"
-              >
-                Oficinas
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                _hover={{ color: "mainColor", fontWeight: 700 }}
-                href="/#blog"
-              >
-                Blog
-              </Link>
-            </ListItem>
-          </UnorderedList>
         </GridItem>
         <GridItem>
           <VStack alignItems={{ base: "center", lg: "flex-end" }}>
