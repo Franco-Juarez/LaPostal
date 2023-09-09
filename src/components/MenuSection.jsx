@@ -1,4 +1,4 @@
-import { Button, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Heading, Image, Text, VStack } from "@chakra-ui/react";
 import bgMenu from "../assets/bg-section-menu.png";
 import pajaros from "../assets/pajaritos_menu.svg";
 import PopUpBtn from "./PopUpBtn";
