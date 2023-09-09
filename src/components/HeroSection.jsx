@@ -33,9 +33,9 @@ const HeroSection = () => {
         <Heading
           w={{ base: "98%", lg: "80%" }}
           textAlign={"left"}
-          lineHeight={{ base: "70px", lg: "150px" }}
+          lineHeight={{ base: "70px", md: "120px", lg: "150px" }}
           fontWeight={400}
-          fontSize={{ base: "70px", md: "160px" }}
+          fontSize={{ base: "70px", lg: "160px" }}
           color={"brand.secondaryColor"}
         >
           La Postal

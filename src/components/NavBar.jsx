@@ -9,7 +9,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import { keyframes } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import pajarosMenu from "../assets/pajaritos_menu.png";
+import pajarosMenu from "../assets/pajaritos_menu.svg";
 
 const animationKeyframes = keyframes`
   0% { opacity: 0;}
@@ -43,7 +43,6 @@ const NavBar = () => {
       top={0}
       right={0}
       zIndex={10}
-      py={4}
     >
       <HStack
         m={"0 auto"}
@@ -106,7 +105,7 @@ const NavBar = () => {
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#servicios">Nosotros</a>
+              <a href="#nosotros">Nosotros</a>
             </ListItem>
             <ListItem
               fontSize={"24px"}
@@ -116,7 +115,7 @@ const NavBar = () => {
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#oficinas">Menú</a>
+              <a href="#menu">Menú</a>
             </ListItem>
             <ListItem
               fontSize={"24px"}
@@ -126,7 +125,7 @@ const NavBar = () => {
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#blog">Eventos</a>
+              <a href="#eventos">Eventos</a>
             </ListItem>
             <ListItem
               fontSize={"24px"}
@@ -136,7 +135,7 @@ const NavBar = () => {
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#blog">Galería</a>
+              <a href="#galeria">Galería</a>
             </ListItem>
             <ListItem
               fontSize={"24px"}
@@ -146,7 +145,7 @@ const NavBar = () => {
               className="hover-underline-animation"
               listStyleType={"none"}
             >
-              <a href="#blog">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </ListItem>
           </UnorderedList>
           <Button
@@ -161,10 +160,12 @@ const NavBar = () => {
             onClick={() => setIsToggled(!isToggled)}
           >
             <CloseIcon
+              fontSize={"20px"}
               color={"brand.background"}
               display={isToggled ? "block" : "none"}
             />
             <HamburgerIcon
+              fontSize={"20px"}
               color={"brand.acentColor"}
               display={isToggled ? "none" : "block"}
             />

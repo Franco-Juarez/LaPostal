@@ -5,20 +5,22 @@ import formImageDesktop from "../assets/formImageDesktop.png";
 
 const FormSection = () => {
   return (
-    <VStack pt={5} backgroundColor={"brand.secondaryColor"}>
+    <VStack id="eventos" backgroundColor={"brand.mainColor"}>
       <Image
+        maxW={"400px"}
+        p={4}
         display={{ base: "block", lg: "none" }}
         zIndex={2}
-        mb={"-60px"}
+        w={"100%"}
         src={formImageMobile}
       />
       <Image
         display={{ base: "none", lg: "block" }}
         zIndex={2}
-        mb={"-80px"}
+        w={"100%"}
         src={formImageDesktop}
       />
-      <VStack pb={8} px={5} pt={24} backgroundColor={"brand.acentColor"}>
+      <VStack p={4} pt={6} backgroundColor={"brand.acentColor"}>
         <Heading
           fontSize={{ base: "24px", lg: "40px" }}
           fontStyle={"italic"}

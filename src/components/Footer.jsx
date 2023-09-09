@@ -17,6 +17,7 @@ import logoFooter from "../assets/logo-footer.svg";
 const Footer = () => {
   return (
     <VStack
+      id="contacto"
       alignItems={"stretch"}
       backgroundColor={"brand.background"}
       px={{ base: 4, lg: 12 }}
@@ -133,7 +134,7 @@ const Footer = () => {
           </VStack>
         </GridItem>
       </Grid>
-      <HStack pt={4} justifyContent={"center"} color={"brand.acentColor"}>
+      <HStack justifyContent={"center"} color={"brand.acentColor"}>
         <Link
           href="https://www.swwwing.com.ar"
           isExternal

@@ -1,9 +1,9 @@
 import { Button, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import bgMenu from "../assets/bg-section-menu.png";
-import pajaros from "../assets/pajaritos_menu.png";
+import pajaros from "../assets/pajaritos_menu.svg";
 export const MenuSection = () => {
   return (
-    <VStack backgroundColor={"brand.background"}>
+    <VStack id="menu" backgroundColor={"brand.background"}>
       <VStack
         gap={5}
         justifyContent={"center"}
@@ -27,10 +27,10 @@ export const MenuSection = () => {
           Nuestro menú
         </Heading>
       </VStack>
-      <VStack backgroundColor={"brand.background"} gap={8} py={16} w={"100%"}>
+      <VStack backgroundColor={"brand.background"} gap={8} p={4} w={"100%"}>
         <Text
           fontSize={{ base: "16px", lg: "20px" }}
-          w={{ base: "100%", lg: "70%" }}
+          w={{ base: "100%", lg: "50%" }}
           textAlign={"center"}
           color={"brand.acentColor"}
         >

@@ -11,7 +11,7 @@ import {
 
 const Form = () => {
   return (
-    <FormControl gap={10} py={10} width={{ base: "80%", lg: "50%" }} isRequired>
+    <FormControl gap={10} py={5} width={{ base: "100%", lg: "50%" }} isRequired>
       <FormLabel color={"brand.background"}>Nombre</FormLabel>
       <Input
         backgroundColor={"#FFFFFF"}
