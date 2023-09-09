@@ -34,7 +34,7 @@ const Banner = ({ heading, text }) => {
           pb={4}
         />
         <VStack
-          w={{ base: "100%", lg: "50%" }}
+          w={{ base: "100%", lg: "80%" }}
           alignItems={{ base: "center", xl: "flex-start" }}
         >
           <Heading

@@ -1,6 +1,7 @@
 import { Button, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import bgMenu from "../assets/bg-section-menu.png";
 import pajaros from "../assets/pajaritos_menu.svg";
+import PopUpBtn from "./PopUpBtn";
 export const MenuSection = () => {
   return (
     <VStack id="menu" backgroundColor={"brand.background"}>
@@ -27,37 +28,34 @@ export const MenuSection = () => {
           Nuestro menú
         </Heading>
       </VStack>
-      <VStack backgroundColor={"brand.background"} gap={8} py={16} w={"100%"}>
+      <VStack
+        backgroundColor={"brand.background"}
+        gap={8}
+        py={{ base: 4, xl: 16 }}
+        w={"100%"}
+      >
         <Text
           fontSize={{ base: "16px", lg: "20px" }}
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "60%" }}
           textAlign={"center"}
           color={"brand.acentColor"}
         >
           Nuestro restaurante está abierto durante todo el año. Servimos brunchs
           y meriendas, sandwiches, tostones, ensaladas y más, incorporando
           frutos de mar, vegetales de estación e ingredientes de producción
-          regional. Durante el verano ofrecemos una barra premium con cocktails
-          clásicos y de autor. Ten en cuenta que el menú puede variar de acuerdo
-          a la estación en la que nos visites.
+          regional.
         </Text>
-        <Button
-          fontStyle={"italic"}
-          fontWeight={400}
-          fontSize={"20px"}
-          fontFamily={"secondaryHeading"}
-          color={"brand.background"}
-          borderRadius={0}
-          backgroundColor={"brand.mainColor"}
-          border={"2px solid #CF9A84"}
-          _hover={{
-            backgroundColor: "brand.background",
-            borderColor: "brand.mainColor",
-            color: "brand.mainColor",
-          }}
+        <Text
+          fontSize={{ base: "16px", lg: "20px" }}
+          w={{ base: "100%", md: "60%" }}
+          textAlign={"center"}
+          color={"brand.acentColor"}
         >
-          Menú verano 2023
-        </Button>
+          Durante el verano ofrecemos una barra premium con cocktails clásicos y
+          de autor. Ten en cuenta que el menú puede variar de acuerdo a la
+          estación en la que nos visites.
+        </Text>
+        <PopUpBtn btnName={"Menú verano 2023"} />
       </VStack>
     </VStack>
   );

@@ -6,8 +6,8 @@ import formImageDesktop from "../assets/formImageDesktop.png";
 const FormSection = () => {
   return (
     <VStack
-      py={16}
-      px={20}
+      py={{ base: 4, xl: 16 }}
+      px={{ base: 4, xl: 20 }}
       id="eventos"
       backgroundColor={"brand.secondaryColor"}
     >
@@ -25,7 +25,7 @@ const FormSection = () => {
         w={"100%"}
         src={formImageDesktop}
       />
-      <VStack p={4} pt={6}>
+      <VStack p={4} pt={{ base: 0, xl: 16 }}>
         <Heading
           fontSize={{ base: "24px", lg: "40px" }}
           fontStyle={"italic"}
@@ -33,6 +33,7 @@ const FormSection = () => {
           lineHeight={"32px"}
           fontFamily={"secondaryHeading"}
           color={"brand.background"}
+          pb={{ base: 2, xl: 8 }}
         >
           Celebraciones y eventos
         </Heading>
@@ -41,6 +42,7 @@ const FormSection = () => {
           color={"brand.background"}
           textAlign={"center"}
           fontSize={{ base: "16px", lg: "20px" }}
+          pb={{ base: 2, xl: 8 }}
         >
           Contamos con un amplio espacio para eventos privados, como bodas,
           recepciones, cumpleaños y reuniones corporativas. Estos eventos pueden
@@ -54,7 +56,7 @@ const FormSection = () => {
           fontSize={{ base: "16px", lg: "20px" }}
           color={"brand.background"}
           fontWeight={"bold"}
-          w={{ base: "100%", lg: "50%" }}
+          w={{ base: "100%", md: "80%" }}
         >
           Completá el formulario y nos comunicaremos contigo para proporcionarte
           más información

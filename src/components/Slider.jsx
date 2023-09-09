@@ -12,8 +12,6 @@ const SliderImages = () => {
     }
   }, []);
 
-  console.log(isMobile);
-
   return (
     <HStack id="galeria" py={8}>
       <Carousel

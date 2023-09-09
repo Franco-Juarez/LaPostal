@@ -8,6 +8,7 @@ import {
   Textarea,
   VStack,
 } from "@chakra-ui/react";
+import PopUpBtn from "./PopUpBtn";
 
 const Form = () => {
   return (
@@ -71,28 +72,7 @@ const Form = () => {
         placeholder="Detalles del evento"
       ></Textarea>
       <VStack>
-        <Button
-          py={4}
-          px={8}
-          border={"2px solid #CF9A84"}
-          lineHeight={"90px"}
-          fontSize={"20px"}
-          fontStyle={"italic"}
-          fontFamily={"secondaryHeading"}
-          color={"brand.background"}
-          backgroundColor={"brand.mainColor"}
-          borderRadius={"none"}
-          mt={4}
-          width={"200px"}
-          type="submit"
-          _hover={{
-            backgroundColor: "brand.background",
-            borderColor: "brand.mainColor",
-            color: "brand.mainColor",
-          }}
-        >
-          Enviar Consulta
-        </Button>
+        <PopUpBtn btnName={"Enviar consulta"} />
       </VStack>
     </FormControl>
   );
