@@ -23,7 +23,7 @@ const Banner = ({ heading, text }) => {
       >
         <Image
           display={{ base: "block", lg: "none" }}
-          maxWidth={"600px"}
+          maxWidth={"300px"}
           mt={{ base: "20px", lg: "0" }}
           ml={{ base: "0", lg: "100px" }}
           src={aboutImage}
