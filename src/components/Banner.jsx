@@ -9,7 +9,10 @@ const Banner = ({ heading, text }) => {
       p={{ base: 4, lg: 12 }}
       alignItems={"center"}
       justifyContent={"center"}
-      backgroundColor={"brand.mainColor"}
+      backgroundImage={{
+        base: "linear-gradient(to bottom, brand.background 30%, brand.acentColor 30%)",
+        xl: "linear-gradient(to right, brand.background 50%, brand.acentColor 50%)",
+      }}
     >
       <HStack
         gap={5}
@@ -19,6 +22,7 @@ const Banner = ({ heading, text }) => {
       >
         <Image
           display={{ base: "block", lg: "none" }}
+          maxW={"500px"}
           w={"100%"}
           src={aboutImage}
         />
@@ -30,7 +34,6 @@ const Banner = ({ heading, text }) => {
           pb={4}
         />
         <VStack
-          pt={4}
           w={{ base: "100%", lg: "50%" }}
           alignItems={{ base: "center", xl: "flex-start" }}
         >
@@ -46,7 +49,7 @@ const Banner = ({ heading, text }) => {
             {heading}
           </Heading>
           <Text
-            w={{ base: "100%", xl: "80%" }}
+            w={{ base: "100%", md: "80%" }}
             color={"whiteAlpha.900"}
             textAlign={{ base: "center", xl: "left" }}
             fontSize={{ base: "16px", lg: "20px" }}

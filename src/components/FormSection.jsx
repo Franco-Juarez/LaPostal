@@ -5,7 +5,7 @@ import formImageDesktop from "../assets/formImageDesktop.png";
 
 const FormSection = () => {
   return (
-    <VStack id="eventos" backgroundColor={"brand.mainColor"}>
+    <VStack id="eventos" backgroundColor={"brand.secondaryColor"}>
       <Image
         maxW={"400px"}
         p={4}
@@ -20,7 +20,7 @@ const FormSection = () => {
         w={"100%"}
         src={formImageDesktop}
       />
-      <VStack p={4} pt={6} backgroundColor={"brand.acentColor"}>
+      <VStack p={4} pt={6}>
         <Heading
           fontSize={{ base: "24px", lg: "40px" }}
           fontStyle={"italic"}
@@ -32,7 +32,7 @@ const FormSection = () => {
           Celebraciones y eventos
         </Heading>
         <Text
-          w={{ base: "100%", lg: "50%" }}
+          w={{ base: "100%", md: "80%" }}
           color={"brand.background"}
           textAlign={"center"}
           fontSize={{ base: "16px", lg: "20px" }}
