@@ -39,6 +39,7 @@ export const MenuSection = () => {
           w={{ base: "100%", md: "60%" }}
           textAlign={"center"}
           color={"brand.acentColor"}
+          px={4}
         >
           Nuestro restaurante está abierto durante todo el año. Servimos brunchs
           y meriendas, sandwiches, tostones, ensaladas y más, incorporando
@@ -50,6 +51,7 @@ export const MenuSection = () => {
           w={{ base: "100%", md: "60%" }}
           textAlign={"center"}
           color={"brand.acentColor"}
+          px={4}
         >
           Durante el verano ofrecemos una barra premium con cocktails clásicos y
           de autor. Ten en cuenta que el menú puede variar de acuerdo a la
