@@ -88,8 +88,8 @@ const NavBar = () => {
             display={{ base: isToggled ? "flex" : "none", lg: "flex" }}
             flexDirection={{ base: "column", lg: "row" }}
             alignItems={"center"}
-            justifyContent={"flex-start"}
-            fontSize={20}
+            justifyContent={"center"}
+            fontSize={22}
           >
             <ListItem
               display={{ base: "block", lg: "none" }}
