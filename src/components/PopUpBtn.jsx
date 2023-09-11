@@ -51,6 +51,7 @@ const PopUpBtn = ({ btnName }) => {
             Si quieres que tu sitio web se vea como este, ¡contáctanos y
             trabajemos juntos!
             <Button
+              mt={2}
               fontStyle={"italic"}
               fontWeight={400}
               fontSize={"20px"}
